@@ -43,7 +43,7 @@ export const Hero = () => {
                   </p>
                 </div>
                 <div className="mt-6">
-                  <button className="py-3 bg-linear-to-t from-[#4d2c4d] to-indigo-500 px-8 hover:duration-300 rounded-full shadow-2xl cur hover:from-indigo-500  hover:font-bold">
+                  <button className="py-3 bg-linear-to-t from-[#4d2c4d] to-indigo-400 px-8 hover:duration-300 font-bold rounded-full shadow-2xl cur hover:from-indigo-500 hover:scale-95">
                     Shop Now
                   </button>
                 </div>
@@ -52,7 +52,7 @@ export const Hero = () => {
                   <p className="tracking-wider">define your style</p>
                 </div>
               </div>
-              <div className="mt-10 relative z-50 text-right">
+              <div className="mt-15 relative z-50 text-right">
                 <div className="bg-indigo-300 shadow-2xl pt-4 px-6 rounded-xl overflow-hidden">
                   <Image
                     src={outfit1}
