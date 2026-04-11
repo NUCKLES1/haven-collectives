@@ -62,10 +62,10 @@ export const Header = () => {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={` rounded-md hover:text-black duration-300 ${
+                    className={` rounded-md hover:text-indigo-300 duration-300 ${
                       isActive
-                        ? " text-black  font-semibold"
-                        : "text-white hover:text-black duration-300"
+                        ? " text-indigo-300  font-semibold"
+                        : "text-white hover:text-indigo-300 duration-300"
                     }`}
                   >
                     {link.label}
