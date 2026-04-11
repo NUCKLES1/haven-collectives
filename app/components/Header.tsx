@@ -78,7 +78,7 @@ export const Header = () => {
         </div>
         <div className="flex justify-between w-1/2">
           <div>
- <span className="logo-sub">HAVEN HOUSE</span>
+ <span className="logo-sub">HHC</span>
           </div>
           <div>Logo</div>
         </div>
