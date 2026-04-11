@@ -78,11 +78,12 @@ body {
 }
 
 .logo-sub {
-  margin-top: 10px;
+  margin-top: 5px;
   font-family: 'Cinzel', serif;
-  letter-spacing: 8px;
-  font-size: 48px;
+  letter-spacing: 6px;
+  font-size: 14px;
   color: #bfbfbf;
+  margin-left: -10px;
   filter: drop-shadow(0 0 6px rgba(255,255,255,0.3));
 
   text-shadow:

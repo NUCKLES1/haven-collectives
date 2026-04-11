@@ -78,13 +78,7 @@ export const Header = () => {
         </div>
         <div className="flex justify-between w-1/2">
           <div>
-            <Image
-              src={logo}
-              width={60}
-              height={60}
-              alt=""
-              className="object-contain w-20 -mt-8 h-20 overflow-hidden hover:scale-110"
-            />
+ <span className="logo-sub">HAVEN HOUSE</span>
           </div>
           <div>Logo</div>
         </div>
