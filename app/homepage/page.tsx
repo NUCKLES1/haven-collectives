@@ -1,9 +1,22 @@
-import React from 'react'
+import React from "react";
+import { Hero } from "./Hero";
 
-const page = () => {
+const Homepage = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div className="bg-[#ffffff]">
+        {/*
+      <div className="flex flex-col items-center justify-center h-screen bg-black py-30">
+        <h1 className="logo-text">HAVEN HOUSE</h1>
+        <div className="flex items-center gap-4 mt-2">
+          <div className="line" />
+          <span className="logo-sub">COLLECTIVE</span>
+          <div className="line" />
+        </div>
+      </div>
+        */}
+      <Hero />
+    </div>
+  );
+};
 
-export default page
+export default Homepage;
