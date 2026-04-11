@@ -87,7 +87,7 @@ export const Hero = () => {
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className=" bg-white/20 backdrop-blur-md border border-white/30 w-70 p-2 rounded-2xl h-full ml-30 rotate-25"
+              className=" bg-white/20 backdrop-blur-md border border-white/30 w-65 p-2 rounded-2xl h-full ml-30 rotate-25"
             >
               <div className="w-full h-full bg-[#fefefe] rounded-2xl overflow-hidden">
                 <Image
