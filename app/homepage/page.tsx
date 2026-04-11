@@ -8,7 +8,7 @@ const Homepage = () => {
       <div className="flex flex-col items-center justify-center h-screen bg-black py-30">
         <h1 className="logo-text">HAVEN HOUSE</h1>
         <div className="flex items-center gap-4 mt-2">
-          <div className="line" />
+          <div className="line" /> al
           <span className="logo-sub">COLLECTIVE</span>
           <div className="line" />
         </div>
