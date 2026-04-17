@@ -7,6 +7,7 @@ import { LiaTimesSolid } from "react-icons/lia";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import logo from "../../public/logo.png";
+import { CgShoppingCart } from "react-icons/cg";
 
 export const Header = () => {
   const [isStyled, setIsStyled] = useState(false);
@@ -78,9 +79,18 @@ export const Header = () => {
         </div>
         <div className="flex justify-between w-1/2">
           <div>
- <span className="logo-sub">HHC</span>
+            <span className="logo-sub">HHC</span>
           </div>
-          <div>Logo</div>
+          <div><CgShoppingCart />
+          <div>
+            <p>
+              <span>0</span> items
+            </p>
+            <p>Cart
+              
+            </p>
+          </div>
+          </div>
         </div>
       </div>
     </div>
