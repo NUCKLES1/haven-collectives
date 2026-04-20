@@ -11,19 +11,31 @@ import outfit1 from "../../public/outfit1.png";
 export const Hero = () => {
   return (
     <>
-      <div className="overflow-hidden relative h-screen w-full">
+      <div className="overflow-hidden relative h-screen w-full text-white max-sm:mt-30">
+        <div className="px-6 lg:hidden">
+          <div>
+            <p className="w-70 text-2xl text-black">
+              Inspired by the city. Designed for modern lives
+            </p>
+          </div>
+          <div className="mt-6">
+            <button className="py-3 bg-linear-to-t from-[#4d2c4d] to-indigo-400 px-8 hover:duration-300 font-bold rounded-full shadow-2xl cur hover:from-indigo-500 hover:scale-95">
+              Shop Now
+            </button>
+          </div>
+        </div>
         <motion.div
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="h-screen w-full px-16 bg-linear-to-t from-[#4d2c4d] to-[#0a0a0a] font-sans pt-30 absolute inset-0 flex overflow-hidden"
+          className="h-screen w-full px-6 lg:px-16 lg:bg-linear-to-t from-[#4d2c4d] to-[#0a0a0a] font-sans max-sm:pt-30 absolute inset-0 flex overflow-hidden max-sm:mt-28"
         >
           <div>
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="font-bold leading-10 tracking-wider text-white z-10 relative scale-y-150 fj"
+              className="font-bold leading-10 tracking-wider text-white z-40 lg:z-10 relative scale-y-150 fj"
               style={{
                 letterSpacing: "0.01em",
                 textAlign: "center",
@@ -35,15 +47,15 @@ export const Hero = () => {
             >
               COLLECTIVES
             </motion.h1>
-            <div className="w-full flex justify-between pt-25">
+            <div className="w-full flex justify-between lg:pt-25 max-sm:pt-40">
               <div className="w-auto relative z-50">
                 <div>
-                  <p className="w-70 text-xl">
+                  <p className="w-70 text-xl max-sm:hidden">
                     Inspired by the city. Designed for modern lives
                   </p>
                 </div>
                 <div className="mt-6">
-                  <button className="py-3 bg-linear-to-t from-[#4d2c4d] to-indigo-400 px-8 hover:duration-300 font-bold rounded-full shadow-2xl cur hover:from-indigo-500 hover:scale-95">
+                  <button className="py-3 bg-linear-to-t from-[#4d2c4d] to-indigo-400 px-8 hover:duration-300 font-bold rounded-full shadow-2xl cur hover:from-indigo-500 hover:scale-95 max-sm:hidden">
                     Shop Now
                   </button>
                 </div>
@@ -72,18 +84,18 @@ export const Hero = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="z-30 relative mx-auto w-full"
+          className="z-30 relative lg:mx-auto w-full max-sm:w-[95%] max-sm:bg-linear-to-t mx-2 from-[#4d2c4d] to-[#0a0a0a] max-sm:rounded-2xl max-sm:h-120 max-sm:overflow-hidden max-sm:mt-14"
         >
           <Image
             src={fashion}
             width={400}
             height={600}
             alt=""
-            className="object-cover mt-10 z-30 relative mx-auto"
+            className="object-cover mt-10 z-50 relative mx-auto max-sm:scale-70 max-sm:-mt-6"
           />
         </motion.div>
         <div className="w-full">
-          <div className="-mt-120 h-90 w-60 relative z-20 mx-auto">
+          <div className="-mt-120 h-90 w-60 relative lg:z-20 mx-auto max-sm:scale-50">
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
@@ -105,8 +117,6 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-
-     
     </>
   );
 };
