@@ -111,7 +111,7 @@ export const Hero = () => {
                 />
               </div>
               <div className="w-15 h-15 text-center pt-5 uppercase text-sm font-semibold text-indigo-400 rounded-full bg-white shadow-2xl -top-25 relative z-20 ml-45 cur hover:bg-indigo-400 hover:text-white duration-300">
-                new
+                New
               </div>
             </motion.div>
           </div>
