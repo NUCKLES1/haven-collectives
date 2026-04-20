@@ -76,14 +76,14 @@ const About = () => {
               alt=""
               width={500}
               height={500}
-              className="w-70 max-sm:w-1/2 h-70 mt-10 max-sm:h-50 object-cover rounded-2xl"
+              className="w-[50%] max-sm:w-1/2 h-70 mt-10 max-sm:h-50 object-cover rounded-2xl"
             />
             <Image
               src={necklace}
               alt=""
               width={500}
               height={500}
-              className="w-70 h-80 max-sm:w-1/2 object-cover max-sm:h-60 rounded-2xl"
+              className="w-[50%] h-80 max-sm:w-1/2 object-cover max-sm:h-60 rounded-2xl"
             />
           </div>
         </div>
