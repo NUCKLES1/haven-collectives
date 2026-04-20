@@ -64,7 +64,7 @@ export const Hero = () => {
                   <p className="tracking-wider">define your style</p>
                 </div>
               </div>
-              <div className="max-sm:mt-15 relative z-50 text-right">
+              <div className="max-sm:mt-15 mt-5 relative z-50 text-right">
                 <div className="bg-indigo-300 shadow-2xl pt-4 px-6 rounded-xl overflow-hidden">
                   <Image
                     src={outfit1}
