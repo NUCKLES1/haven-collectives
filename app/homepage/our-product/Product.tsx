@@ -7,7 +7,7 @@ export default async function Product () {
   const categories = await getAllCategories();
   return (
     <div className='h-screen w-full pt-30 lg:px-20 px-6'>
-      <div className='uppercase text-black text-5xl'>
+      <div className='uppercase text-black lg:text-5xl text-3xl'>
         <h1>Our collections</h1>
       </div>
     <ProductList products={products} title={true} categories={categories}/>

@@ -11,7 +11,7 @@ import outfit1 from "../../public/outfit1.png";
 export const Hero = () => {
   return (
     <>
-      <div className="overflow-hidden relative h-screen w-full text-white max-sm:mt-30">
+      <div className="overflow-hidden relative lg:h-screen h-[80vh] w-full text-white max-sm:mt-30">
         <div className="px-6 lg:hidden">
           <div>
             <p className="w-70 text-2xl text-black">
@@ -28,7 +28,7 @@ export const Hero = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="h-screen w-full px-6 lg:px-16 lg:bg-linear-to-t from-[#4d2c4d] to-[#0a0a0a] font-sans max-sm:pt-30 absolute inset-0 flex overflow-hidden max-sm:mt-28"
+          className="h-screen w-full px-6 lg:px-16 lg:pt-25 lg:bg-linear-to-t from-[#4d2c4d] to-[#0a0a0a] font-sans max-sm:pt-30 absolute inset-0 flex overflow-hidden max-sm:mt-26"
         >
           <div>
             <motion.h1
@@ -64,7 +64,7 @@ export const Hero = () => {
                   <p className="tracking-wider">define your style</p>
                 </div>
               </div>
-              <div className="mt-15 relative z-50 text-right">
+              <div className="max-sm:mt-15 relative z-50 text-right">
                 <div className="bg-indigo-300 shadow-2xl pt-4 px-6 rounded-xl overflow-hidden">
                   <Image
                     src={outfit1}
@@ -84,7 +84,7 @@ export const Hero = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="z-30 relative lg:mx-auto w-full max-sm:w-[95%] max-sm:bg-linear-to-t mx-2 from-[#4d2c4d] to-[#0a0a0a] max-sm:rounded-2xl max-sm:h-120 max-sm:overflow-hidden max-sm:mt-14"
+          className="z-30 relative lg:mx-auto w-full max-sm:w-full max-sm:bg-linear-to-t mx-2 from-[#4d2c4d] to-[#0a0a0a] max-sm:rounded-2xl max-sm:h-120 max-sm:overflow-hidden max-sm:mt-14"
         >
           <Image
             src={fashion}

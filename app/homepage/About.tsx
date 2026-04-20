@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import lady from "../../public/lady.png";
+import fragrance from "../../public/fragrance.png";
+import necklace from "../../public/necklace.png";
 
 const About = () => {
   return (
@@ -50,7 +52,7 @@ const About = () => {
               Elevate Your Everyday Style - Where Confidence Meets Comfort, And
               Simplicity Turns into Statement.
             </p>
-            <div className="mt-6 flex gap-10">
+            <div className="mt-6 flex gap-10 max-sm:hidden">
               <div className="max-sm:text-center">
                 <h1 className="text-3xl font-semibold">430+</h1>
                 <p className=" text-gray-500">Everyday Style</p>
@@ -62,7 +64,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="lg:mt-45 mt-10 lg:w-[40%]">
+        <div className="lg:mt-45 mt-4 lg:w-[40%]">
           <p className="lg:pl-10 text-gray-500 text-lg">
             At Haven House, We Believe Style Isn't Just What You Wear - It's How
             You Live. <br />
@@ -70,18 +72,18 @@ const About = () => {
           </p>
           <div className="flex lg:gap-6 gap-2 lg:-ml-30 mt-10">
             <Image
-              src={lady}
+              src={fragrance}
               alt=""
               width={500}
               height={500}
-              className="w-80 max-sm:w-1/2 h-70 mt-10 max-sm:h-50 object-cover rounded-2xl"
+              className="w-70 max-sm:w-1/2 h-70 mt-10 max-sm:h-50 object-cover rounded-2xl"
             />
             <Image
-              src={lady}
+              src={necklace}
               alt=""
               width={500}
               height={500}
-              className="w-80 h-80 max-sm:w-1/2 object-cover max-sm:h-60 rounded-2xl"
+              className="w-70 h-80 max-sm:w-1/2 object-cover max-sm:h-60 rounded-2xl"
             />
           </div>
         </div>

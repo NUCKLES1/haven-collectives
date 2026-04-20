@@ -90,8 +90,8 @@ export const Header = () => {
             <span className="logo-sub max-sm:hidden">HHC</span>
           </div>
           <div className="max-sm:hidden">
-            <CgShoppingCart />
-            <div>
+            <CgShoppingCart className="text-white text-xl"/>
+            <div className="hidden">
               <p>
                 <span>0</span> items
               </p>
@@ -122,7 +122,7 @@ export const Header = () => {
             */}
           </div>
             <div
-            className="text-bold rounded-full text-2xl gap-1 flex cursor-pointer"
+            className="text-bold rounded-full text-2xl gap-1 flex cursor-pointer lg:hidden"
             onClick={toggleStyle}
           >
             <CiMenuFries size={30} className=" max-sm:block text-black" />

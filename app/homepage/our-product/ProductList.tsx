@@ -14,7 +14,7 @@ const ProductList = ({products, title, categories}: Props) => {
     <div className=''>
       <Categories categories={categories}/>
       <div>
-        <div className='grid lg:grid-cols-3 grid-cols-2 lg:gap-8 gap-4'>
+        <div className='grid lg:grid-cols-3 grid-cols-2 lg:gap-8 gap-4 max-sm:mt-10'>
          {products?.map((product)=> <ProductCard key={product?._id} product={product}/>)}
         </div>
       </div>

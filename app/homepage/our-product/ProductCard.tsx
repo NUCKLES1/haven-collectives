@@ -23,7 +23,7 @@ const ProductCard = ({product}:Props) => {
         ) : null}
         </div>
         <div>
-        <div className='text-black text-3xl'>{product.name}</div>
+        <div className='text-black lg:text-3xl text-xl'>{product.name}</div>
         <div className='text-black'>${product.price}</div>
         </div>
     </div>
