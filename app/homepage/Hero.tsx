@@ -30,7 +30,7 @@ export const Hero = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="lg:h-screen w-full lg:px-16 lg:pt-25 lg:bg-linear-to-t from-[#4d2c4d] to-[#0a0a0a] font-sans max-sm:pt-30 absolute inset-0 flex overflow-hidden max-sm:mt-26"
         >
-          <div className="max-sm:scale-95 mx-5.5 max-sm:relative max-sm:z-50">
+          <div className="max-sm:scale-95 w-[90%] mx-auto max-sm:relative max-sm:z-50">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
