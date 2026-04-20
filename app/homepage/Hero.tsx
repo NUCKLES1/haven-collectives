@@ -84,7 +84,7 @@ export const Hero = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="z-30 lg:relative lg:mx-auto w-full max-sm:w-[95%] max-sm:bg-linear-to-t mx-2 from-[#4d2c4d] to-[#0a0a0a] max-sm:rounded-3xl max-sm:h-120 max-sm:overflow-hidden max-sm:mt-14"
+          className="z-30 lg:relative lg:mx-auto w-full max-sm:w-[95%] max-sm:bg-linear-to-t max-sm:mx-auto from-[#4d2c4d] to-[#0a0a0a] max-sm:rounded-3xl max-sm:h-120 max-sm:overflow-hidden max-sm:mt-14"
         >
           <Image
             src={fashion}
