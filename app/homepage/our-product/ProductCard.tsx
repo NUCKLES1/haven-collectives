@@ -10,7 +10,7 @@ interface Props{
 const ProductCard = ({product}:Props) => {
   return (
     <div className='bg:border-gray-300 group text-sm'>
-        <div className='lg:h-100 h-50 rounded-xl overflow-hidden '>
+        <div className='lg:h-100 h-60 rounded-xl overflow-hidden '>
         {product?.image?.length ? (
              <Image
                src={urlFor(product.image[0]).url()}
@@ -22,9 +22,9 @@ const ProductCard = ({product}:Props) => {
              />
         ) : null}
         </div>
-        <div>
-        <div className='text-black lg:text-3xl text-xl'>{product.name}</div>
-        <div className='text-black'>${product.price}</div>
+        <div className='mt-2'>
+        <div className='text-black lg:text-2xl text-xl uppercase'>{product.name}</div>
+        <div className='text-black lg:text-xl'>${product.price}</div>
         </div>
     </div>
   )

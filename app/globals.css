@@ -69,3 +69,11 @@
   height: 1px;
   background: linear-gradient(to right, transparent, #bfbfbf, transparent);
 }
+
+
+.card {
+  overflow: hidden;
+  clip-path: path(
+    "M 60 0 H 100% V 100% H 0 V 60 Q 0 0 60 0 Z"
+  );
+}
