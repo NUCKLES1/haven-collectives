@@ -29,18 +29,18 @@ export const Footer = () => {
   ];
 
   return (
-    <div className="pb-6 w-full lg:px-20 px-4 mt-20">
+    <div className="pb-6 w-full lg:px-20 px-4 lg:mt-20 mt-40">
       <div className="lg:flex justify-between">
         <div className="flex flex-col gap-4">
           <span className="font-semibold max-sm:text-black text-xl">HHC</span>
           <p>Luxury in Every Detail, Crafted for Timeless Style.</p>
-          <div className="p-1 w-75 border border-gray-400 rounded-md">
+          <div className="p-1 w-77 border border-gray-400 rounded-md">
             <input
               type="text"
               placeholder="Enter your email"
               className="py-2.5 pl-2 max-sm:w-46"
             />
-            <button className="text-white bg-black px-4 py-2.5 rounded-md">
+            <button className="text-white bg-black px-4 py-2.5 hover:scale-90 rounded-md cur duration-300 hover:border hover:border-black hover:bg-white hover:text-black">
               Subscribe
             </button>
           </div>

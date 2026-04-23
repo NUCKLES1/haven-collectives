@@ -21,8 +21,8 @@ const Testimonial = () => {
         <div>
           <Image
             src={profile}
-            width={50}
-            height={50}
+            width={500}
+            height={500}
             alt=""
             className="rounded-3xl h-120 w-full object-cover"
           />

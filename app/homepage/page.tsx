@@ -6,6 +6,7 @@ import Percent from "./Percent";
 import Craft from "./Craft";
 import Testimonial from "./Testimonial";
 import { Footer } from "../components/Footer";
+import Step from "./Step";
 
 const Homepage = () => {
   return (
@@ -26,6 +27,7 @@ const Homepage = () => {
       <Percent />
       <Craft />
       <Testimonial />
+      <Step />
       <Footer />
     </div>
   );
