@@ -212,12 +212,12 @@ export const Footer = () => {
         </div>
         <div className="flex gap-4 mt-4">
           <Link href="">
-            <p className="text-sm text-black hover:underline duration-300 cur">
+            <p className="text-sm max-sm:underline text-black hover:underline duration-300 cur">
               Privacy Policy
             </p>
           </Link>
           <Link href="">
-            <p className="text-sm text-black hover:underline duration-300 cur">
+            <p className="text-sm max-sm:underline text-black hover:underline duration-300 cur">
               Terms of Service
             </p>
           </Link>
