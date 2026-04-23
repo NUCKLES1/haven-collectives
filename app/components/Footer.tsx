@@ -38,7 +38,7 @@ export const Footer = () => {
             <input
               type="text"
               placeholder="Enter your email"
-              className="py-2.5 pl-2 max-sm:w-[65%]"
+              className="py-2.5 pl-2 max-sm:w-45"
             />
             <button className="text-white bg-black px-4 py-2.5 rounded-md">
               Subscribe
@@ -49,7 +49,7 @@ export const Footer = () => {
           <div className="flex flex-col gap-4">
             <button
               type="button"
-              className="w-full text-left text-lg md:cursor-default max-sm:py-4 flex items-center gap-2 md:pb-4"
+              className="w-full text-left text-lg md:cursor-default max-sm:py-4 flex items-center gap-2 md:pb-4 lg:hidden"
               onClick={() => setIsQuickLinksOpen(!isQuickLinksOpen)}
             >
               Pages
@@ -83,7 +83,7 @@ export const Footer = () => {
               })}
             </ul>
             <ul
-              className={`pl-0 mt-2 md:mt-0  flex flex-col max-sm:gap-6 underline pb-6 gap-4 ${isQuickLinksOpen ? "block" : "hidden md:flex"}`}
+              className={`pl-0 mt-2 md:mt-0  flex flex-col max-sm:gap-6 underline lg:hidden pb-6 gap-4 ${isQuickLinksOpen ? "block" : "hidden md:flex"}`}
             >
               {pages.map((link) => {
                 const isActive = pathname === link.href;
@@ -108,7 +108,7 @@ export const Footer = () => {
           <div className="flex flex-col gap-4">
             <button
               type="button"
-              className="w-full text-left text-lg md:cursor-default max-sm:py-4 flex items-center gap-2 md:pb-4"
+              className="w-full text-left text-lg md:cursor-default max-sm:py-4 flex items-center lg:hidden gap-2 md:pb-4"
               onClick={() => setIsCoreOpen(!isCoreOpen)}
             >
               Shop
@@ -142,7 +142,7 @@ export const Footer = () => {
               })}
             </ul>
             <ul
-              className={`pl-0 mt-2 md:mt-0  flex flex-col max-sm:gap-6 underline pb-6 gap-3 ${isCoreOpen ? "block" : "hidden md:flex"}`}
+              className={`pl-0 mt-2 md:mt-0  flex flex-col max-sm:gap-6 lg:hidden underline pb-6 gap-3 ${isCoreOpen ? "block" : "hidden md:flex"}`}
             >
               {shop.map((link) => {
                 const isActive = pathname === link.href;
