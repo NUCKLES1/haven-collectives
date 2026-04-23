@@ -7,7 +7,7 @@ import { StarFilledIcon } from "@sanity/icons";
 
 const Testimonial = () => {
   return (
-    <div className="h-screen mt-20 lg:px-20 px-4">
+    <div className="lg:h-screen mt-20 lg:px-20 px-4">
       <div className="w-full text-center">
         <h1 className="uppercase text-indigo-400 lg:text-6xl text-4xl">
           reflections of excellence
