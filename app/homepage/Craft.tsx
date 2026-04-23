@@ -9,7 +9,13 @@ import { motion } from "framer-motion";
 const Craft = () => {
   return (
     <div className="lg:px-20 px-4 h-auto lg:flex justify-between">
-      <div className="lg:w-[45%] w-11/12">
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="lg:w-[45%] w-11/12"
+      >
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -88,11 +94,11 @@ const Craft = () => {
             <ArrowRight className="-rotate-45 h-6 w-6" />
           </div>
         </motion.div>
-      </div>
+      </motion.div>
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, margin: "50px" }}
         transition={{ duration: 1, ease: "easeOut" }}
         className="lg:w-[53%] max-sm:mt-16"
       >

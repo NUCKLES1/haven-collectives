@@ -34,16 +34,29 @@ export const Footer = () => {
       <div className="lg:flex justify-between">
         <div className="flex flex-col gap-4">
           <motion.span
-            initial={{ opacity: 0, y: -50 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "50px" }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
             className="font-semibold max-sm:text-black text-xl"
           >
             HHC
           </motion.span>
-          <p>Luxury in Every Detail, Crafted for Timeless Style.</p>
-          <div className="p-1 w-77 border border-gray-400 rounded-md">
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "50px" }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+          >
+            Luxury in Every Detail, Crafted for Timeless Style.
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "50px" }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+            className="p-1 w-77 border border-gray-400 rounded-md"
+          >
             <input
               type="text"
               placeholder="Enter your email"
@@ -52,11 +65,15 @@ export const Footer = () => {
             <button className="text-white bg-black px-4 py-2.5 hover:scale-90 rounded-md cur duration-300 hover:border hover:border-black hover:bg-white hover:text-black">
               Subscribe
             </button>
-          </div>
+          </motion.div>
         </div>
         <div className="lg:flex gap-20 max-sm:mt-10">
           <div className="flex flex-col gap-4">
-            <button
+            <motion.button
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "50px" }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
               type="button"
               className="w-full text-left text-lg md:cursor-default max-sm:py-4 flex items-center gap-2 md:pb-4 lg:hidden"
               onClick={() => setIsQuickLinksOpen(!isQuickLinksOpen)}
@@ -69,7 +86,7 @@ export const Footer = () => {
                   <IoChevronDown className="text-xl" />
                 )}
               </span>
-            </button>
+            </motion.button>
             <h1 className="text-lg max-sm:hidden">Pages</h1>
             <ul className="flex flex-col gap-3 max-sm:hidden">
               {pages.map((link) => {
@@ -115,7 +132,11 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-4">
-            <button
+            <motion.button
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "50px" }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
               type="button"
               className="w-full text-left text-lg md:cursor-default max-sm:py-4 flex items-center lg:hidden gap-2 md:pb-4"
               onClick={() => setIsCoreOpen(!isCoreOpen)}
@@ -128,7 +149,7 @@ export const Footer = () => {
                   <IoChevronDown className="text-xl" />
                 )}
               </span>
-            </button>
+            </motion.button>
             <h1 className="text-lg max-sm:hidden">Shop</h1>
             <ul className="flex flex-col gap-3 max-sm:hidden">
               {shop.map((link) => {
@@ -175,26 +196,52 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 max-sm:mt-6">
-          <h1 className="text-lg ">Contact</h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "50px" }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+            className="text-lg "
+          >
+            Contact
+          </motion.h1>
           <div className="flex flex-col gap-3">
-            <a href="mailto:info@safehavenresidentialservice.com">
+            <motion.a
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "50px" }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+              href="mailto:info@safehavenresidentialservice.com"
+            >
               <div className="">
                 <div className="flex">
                   <h1 className="">Email:</h1>
                   <p className="underline pl-2">info@havenhouse.com</p>
                 </div>
               </div>
-            </a>
-            <a href="mailto:info@safehavenresidentialservice.com">
+            </motion.a>
+            <motion.a
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "50px" }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+              href="mailto:info@safehavenresidentialservice.com"
+            >
               <div className="">
                 <div className="flex">
                   <h1 className="">Contact:</h1>
                   <p className="pl-2">123456789</p>
                 </div>
               </div>
-            </a>
+            </motion.a>
           </div>
-          <div className=" flex gap-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "50px" }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+            className=" flex gap-4"
+          >
             <div className="h-10 w-10 border border-[#d9d9d9bb] rounded-xl p-2 cur hover:text-white hover:bg-black duration-300">
               <BsTwitterX className="text-2xl" />
             </div>
@@ -208,10 +255,16 @@ export const Footer = () => {
                 <RiInstagramFill className="text-2xl " />
               </div>
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div className="w-full mt-10 md:mt-16 border-t border-[#d9d9d9bb] md:flex justify-between">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "50px" }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+        className="w-full mt-10 md:mt-16 border-t border-[#d9d9d9bb] md:flex justify-between"
+      >
         <div className="mt-4">
           <p className="text-sm text-black">
             © 2026 Haven-House
@@ -231,7 +284,7 @@ export const Footer = () => {
             </p>
           </Link>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

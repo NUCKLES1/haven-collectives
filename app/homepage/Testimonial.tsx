@@ -86,10 +86,22 @@ const Testimonial = () => {
       </div>
       <div className="grid grid-cols-3 gap-4 mt-10 max-sm:hidden">
         <div>
-          <div className="w-full bg-linear-to-l from-[#4d2c4d] to-indigo-400 h-60 rounded-2xl text-center pt-24 text-2xl text-white">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true,}}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="w-full bg-linear-to-l from-[#4d2c4d] to-indigo-400 h-60 rounded-2xl text-center pt-24 text-2xl text-white"
+          >
             <p>Premium Feel, Perfect Fit.</p>
-          </div>
-          <div className="flex mt-37">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="flex mt-37"
+          >
             <div>
               <Image
                 src={profile}
@@ -109,15 +121,21 @@ const Testimonial = () => {
                 <StarFilledIcon className="h-6 w-6 text-amber-300" />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="h-120 bg-indigo-400 rounded-2xl"></div>
-        <div className="bg-linear-to-r from-[#4d2c4d] to-indigo-400 h-60 rounded-2xl mt-60 ">
+        <div className="relative z-40 h-120 bg-indigo-400 rounded-2xl"></div>
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: true,}}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="bg-linear-to-r from-[#4d2c4d] to-indigo-400 h-60 rounded-2xl mt-60 "
+        >
           <p className="px-6 pt-20 text-white">
             Clean Designs, Great Fit, And Amazing Fabric Quality - HAVEN-HOUSE
             Has Become My Everyday Style Choice.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
