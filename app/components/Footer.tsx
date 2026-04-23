@@ -34,7 +34,7 @@ export const Footer = () => {
         <div className="flex flex-col gap-4">
           <span className="font-semibold max-sm:text-black text-xl">HHC</span>
           <p>Luxury in Every Detail, Crafted for Timeless Style.</p>
-          <div className="p-1 w-75 border border-gray-400 rounded-md">
+          <div className="p-1 lg:w-75 w-[80%] border border-gray-400 rounded-md">
             <input
               type="text"
               placeholder="Enter your email"
@@ -142,7 +142,7 @@ export const Footer = () => {
               })}
             </ul>
             <ul
-              className={`pl-0 mt-2 md:mt-0  flex flex-col max-sm:gap-3 pb-6 gap-3 ${isCoreOpen ? "block" : "hidden md:flex"}`}
+              className={`pl-0 mt-2 md:mt-0  flex flex-col max-sm:gap-6 pb-6 gap-3 ${isCoreOpen ? "block" : "hidden md:flex"}`}
             >
               {shop.map((link) => {
                 const isActive = pathname === link.href;
