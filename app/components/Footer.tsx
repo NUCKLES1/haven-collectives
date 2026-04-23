@@ -1,13 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import { BsTwitterX } from "react-icons/bs";
 import { FaFacebookSquare } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+import { IoChevronDown, IoChevronUp } from "react-icons/io5";
 
 export const Footer = () => {
+  const [isQuickLinksOpen, setIsQuickLinksOpen] = useState(false);
+  const [isCoreOpen, setIsCoreOpen] = useState(false);
+
   const pathname = usePathname();
   const pages = [
     { href: "/", label: "Home" },
@@ -43,8 +47,44 @@ export const Footer = () => {
         </div>
         <div className="lg:flex gap-20 max-sm:mt-10">
           <div className="flex flex-col gap-4">
-            <h1 className="text-lg">Pages</h1>
-            <ul className="flex flex-col gap-3">
+            <button
+              type="button"
+              className="w-full text-left text-lg md:cursor-default max-sm:py-4 flex items-center gap-2 md:pb-4"
+              onClick={() => setIsQuickLinksOpen(!isQuickLinksOpen)}
+            >
+              Pages
+              <span className="md:hidden mt-1">
+                {isQuickLinksOpen ? (
+                  <IoChevronUp className="text-xl" />
+                ) : (
+                  <IoChevronDown className="text-xl" />
+                )}
+              </span>
+            </button>
+            <h1 className="text-lg max-sm:hidden">Pages</h1>
+            <ul className="flex flex-col gap-3 max-sm:hidden">
+              {pages.map((link) => {
+                const isActive = pathname === link.href;
+                return (
+                  <a key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={` rounded-md hover:text-indigo-300 duration-300 ${
+                        isActive
+                          ? " text-indigo-300  font-semibold underline"
+                          : "text-black hover:text-indigo-300 duration-300 hover:underline"
+                      }`}
+                    >
+                      {link.label}
+                      {isActive && link.href === "/" ? "" : ""}
+                    </Link>
+                  </a>
+                );
+              })}
+            </ul>
+            <ul
+              className={`pl-0 mt-2 md:mt-0  flex flex-col max-sm:gap-6 pb-6 gap-4 ${isQuickLinksOpen ? "block" : "hidden md:flex"}`}
+            >
               {pages.map((link) => {
                 const isActive = pathname === link.href;
                 return (
@@ -66,8 +106,44 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-4">
-            <h1 className="text-lg ">Shop</h1>
-            <ul className="flex flex-col gap-3">
+            <button
+              type="button"
+              className="w-full text-left text-lg md:cursor-default max-sm:py-4 flex items-center gap-2 md:pb-4"
+              onClick={() => setIsCoreOpen(!isCoreOpen)}
+            >
+              Shop
+              <span className="md:hidden mt-1">
+                {isCoreOpen ? (
+                  <IoChevronUp className="text-xl" />
+                ) : (
+                  <IoChevronDown className="text-xl" />
+                )}
+              </span>
+            </button>
+            <h1 className="text-lg max-sm:hidden">Shop</h1>
+            <ul className="flex flex-col gap-3 max-sm:hidden">
+              {shop.map((link) => {
+                const isActive = pathname === link.href;
+                return (
+                  <a key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={` rounded-md hover:text-indigo-300 duration-300 ${
+                        isActive
+                          ? " text-indigo-300  font-semibold"
+                          : "text-black hover:text-indigo-300 duration-300"
+                      }`}
+                    >
+                      {link.label}
+                      {isActive && link.href === "/" ? "" : ""}
+                    </Link>
+                  </a>
+                );
+              })}
+            </ul>
+            <ul
+              className={`pl-0 mt-2 md:mt-0  flex flex-col max-sm:gap-3 pb-6 gap-3 ${isCoreOpen ? "block" : "hidden md:flex"}`}
+            >
               {shop.map((link) => {
                 const isActive = pathname === link.href;
                 return (
@@ -89,7 +165,7 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 max-sm:mt-6">
           <h1 className="text-lg ">Contact</h1>
           <div className="flex flex-col gap-3">
             <a href="mailto:info@safehavenresidentialservice.com">
@@ -136,10 +212,14 @@ export const Footer = () => {
         </div>
         <div className="flex gap-4 mt-4">
           <Link href="">
-            <p className="text-sm text-black hover:underline duration-300 cur">Privacy Policy</p> 
+            <p className="text-sm text-black hover:underline duration-300 cur">
+              Privacy Policy
+            </p>
           </Link>
           <Link href="">
-            <p className="text-sm text-black hover:underline duration-300 cur">Terms of Service</p>
+            <p className="text-sm text-black hover:underline duration-300 cur">
+              Terms of Service
+            </p>
           </Link>
         </div>
       </div>

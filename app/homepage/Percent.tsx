@@ -37,7 +37,7 @@ const Percent = () => {
         <div className="grid lg:grid-cols-3 grid-cols-2 lg:gap-4 gap-4 max-sm:mt-10">
           <div className="bg:border-gray-300 group text-sm">
             <div className="lg:h-100 h-60 rounded-xl overflow-hidden ">
-              <div className="w-20 rounded-md text-white bg-linear-to-l from-[#4d2c4d] to-indigo-400 px-3 py-2  z-10 uppercase absolute  mt-6 ml-6">
+              <div className="w-20 max-sm:w-23 rounded-md text-white bg-linear-to-l from-[#4d2c4d] to-indigo-400 px-3 py-2  z-10 uppercase absolute  lg:mt-6 mt-2 lg:ml-6 ml-2">
                 50% off
               </div>
               <Image
@@ -57,7 +57,7 @@ const Percent = () => {
           </div>
           <div className="bg:border-gray-300 group text-sm">
             <div className="lg:h-100 h-60 rounded-xl overflow-hidden ">
-              <div className="w-20 rounded-md text-white bg-linear-to-l from-[#4d2c4d] to-indigo-400 px-3 py-2  z-10 uppercase absolute  mt-6 ml-6">
+              <div className="w-20 max-sm:w-23 rounded-md text-white bg-linear-to-l from-[#4d2c4d] to-indigo-400 px-3 py-2 z-10 uppercase absolute  lg:mt-6 mt-2 lg:ml-6 ml-2">
                 50% off
               </div>
               <Image
@@ -77,7 +77,7 @@ const Percent = () => {
           </div>
           <div className="bg:border-gray-300 group text-sm">
             <div className="lg:h-100 h-60 rounded-xl overflow-hidden ">
-              <div className="w-20 rounded-md text-white bg-linear-to-l from-[#4d2c4d] to-indigo-400 px-3 py-2  z-10 uppercase absolute  mt-6 ml-6">
+              <div className="w-20 max-sm:w-23 rounded-md text-white bg-linear-to-l from-[#4d2c4d] to-indigo-400 px-3 py-2  z-10 uppercase absolute lg:mt-6 mt-2 lg:ml-6 ml-2">
                 50% off
               </div>
               <Image
