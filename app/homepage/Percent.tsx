@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import { PiStarFourFill } from "react-icons/pi";
 import Image from "next/image";
 import outfit from "../../public/outfit.png";
+import { motion } from "framer-motion";
 
 const Percent = () => {
   return (
@@ -36,7 +39,13 @@ const Percent = () => {
       <div className="lg:px-20 px-4 lg:mt-20">
         <div className="grid lg:grid-cols-3 grid-cols-2 lg:gap-4 gap-4 max-sm:mt-10">
           <div className="bg:border-gray-300 group text-sm">
-            <div className="lg:h-100 h-60 rounded-xl overflow-hidden ">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="lg:h-100 h-60 rounded-xl overflow-hidden"
+            >
               <div className="w-20 max-sm:w-23 rounded-md text-white bg-linear-to-l from-[#4d2c4d] to-indigo-400 px-3 py-2  z-10 uppercase absolute  lg:mt-6 mt-2 lg:ml-6 ml-2">
                 50% off
               </div>
@@ -48,14 +57,22 @@ const Percent = () => {
                 loading="lazy"
                 className="w-full h-100 duration-300 object-cover rounded-xl hover:scale-105"
               />
-            </div>
+            </motion.div>
 
             <div className="mt-2">
-                 <div className="text-black lg:text-2xl text-xl uppercase">brown suit</div>
+              <div className="text-black lg:text-2xl text-xl uppercase">
+                brown suit
+              </div>
               <div className="text-black lg:text-xl">$75.00</div>
             </div>
           </div>
-          <div className="bg:border-gray-300 group text-sm">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="bg:border-gray-300 group text-sm"
+          >
             <div className="lg:h-100 h-60 rounded-xl overflow-hidden ">
               <div className="w-20 max-sm:w-23 rounded-md text-white bg-linear-to-l from-[#4d2c4d] to-indigo-400 px-3 py-2 z-10 uppercase absolute  lg:mt-6 mt-2 lg:ml-6 ml-2">
                 50% off
@@ -71,11 +88,19 @@ const Percent = () => {
             </div>
 
             <div className="mt-2">
-              <div className="text-black lg:text-2xl text-xl uppercase">brown suit</div>
+              <div className="text-black lg:text-2xl text-xl uppercase">
+                brown suit
+              </div>
               <div className="text-black lg:text-xl">$75.00</div>
             </div>
-          </div>
-          <div className="bg:border-gray-300 group text-sm">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 1.4, ease: "easeOut" }}
+            className="bg:border-gray-300 group text-sm"
+          >
             <div className="lg:h-100 h-60 rounded-xl overflow-hidden ">
               <div className="w-20 max-sm:w-23 rounded-md text-white bg-linear-to-l from-[#4d2c4d] to-indigo-400 px-3 py-2  z-10 uppercase absolute lg:mt-6 mt-2 lg:ml-6 ml-2">
                 50% off
@@ -91,10 +116,12 @@ const Percent = () => {
             </div>
 
             <div className="mt-2">
-              <div className="text-black lg:text-2xl text-xl uppercase">brown suit</div>
+              <div className="text-black lg:text-2xl text-xl uppercase">
+                brown suit
+              </div>
               <div className="text-black lg:text-xl">$75.00</div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

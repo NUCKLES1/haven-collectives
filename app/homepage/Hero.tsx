@@ -14,14 +14,24 @@ export const Hero = () => {
       <div className="overflow-hidden relative lg:h-screen h-auto w-full text-white max-sm:mt-30">
         <div className="px-6 lg:hidden">
           <div>
-            <p className="w-70 text-2xl text-black">
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="w-70 text-2xl text-black"
+            >
               Inspired by the city. Designed for modern lives
-            </p>
+            </motion.h1>
           </div>
           <div className="mt-6">
-            <button className="py-3 bg-linear-to-t from-[#4d2c4d] to-indigo-400 px-8 hover:duration-300 font-bold rounded-full shadow-2xl cur hover:from-indigo-500 hover:scale-95">
+            <motion.button
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 }}
+              className="py-3 bg-linear-to-t from-[#4d2c4d] to-indigo-400 px-8 hover:duration-300 font-bold rounded-full shadow-2xl cur hover:from-indigo-500 hover:scale-95"
+            >
               Shop Now
-            </button>
+            </motion.button>
           </div>
         </div>
         <motion.div

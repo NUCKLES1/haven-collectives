@@ -7,6 +7,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaFacebookSquare } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoChevronDown, IoChevronUp } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 export const Footer = () => {
   const [isQuickLinksOpen, setIsQuickLinksOpen] = useState(false);
@@ -32,7 +33,15 @@ export const Footer = () => {
     <div className="pb-6 w-full lg:px-20 px-4 lg:mt-20 mt-40">
       <div className="lg:flex justify-between">
         <div className="flex flex-col gap-4">
-          <span className="font-semibold max-sm:text-black text-xl">HHC</span>
+          <motion.span
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+            className="font-semibold max-sm:text-black text-xl"
+          >
+            HHC
+          </motion.span>
           <p>Luxury in Every Detail, Crafted for Timeless Style.</p>
           <div className="p-1 w-77 border border-gray-400 rounded-md">
             <input

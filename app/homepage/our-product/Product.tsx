@@ -2,6 +2,7 @@ import { getAllCategories, getAllProducts } from '@/sanity/helpers'
 import React from 'react'
 import ProductList from './ProductList';
 
+
 export default async function Product () {
   const products = await getAllProducts();
   const categories = await getAllCategories();

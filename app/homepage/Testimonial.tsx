@@ -1,24 +1,45 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import profile from "../../public/outfit.png";
 import { Star } from "lucide-react";
 import { PiListStarFill } from "react-icons/pi";
 import { StarFilledIcon } from "@sanity/icons";
+import { motion } from "framer-motion";
 
 const Testimonial = () => {
   return (
     <div className="lg:h-screen mt-20 lg:px-20 px-4">
       <div className="w-full text-center">
-        <h1 className="uppercase text-indigo-400 lg:text-6xl text-4xl">
+        <motion.h1
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="uppercase text-indigo-400 lg:text-6xl text-4xl"
+        >
           reflections of excellence
-        </h1>
-        <p className="pt-6 text-gray-500">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="pt-6 text-gray-500"
+        >
           Real Stories That Reflect Our Dedication To Quality, Craftmanship, And
           Modern Style.
-        </p>
+        </motion.p>
       </div>
       <div className="w-full mt-16 lg:hidden">
-        <div>
+        <motion.div
+          initial={{ scale: 0.8 }}
+          animate={{ scale: 1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
           <Image
             src={profile}
             width={500}
@@ -26,13 +47,19 @@ const Testimonial = () => {
             alt=""
             className="rounded-3xl h-120 w-full object-cover"
           />
-        </div>
-        <div className="bg-white h-50 -mt-52.5 relative w-[95%] rounded-3xl p-4 mx-auto">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
+          className="bg-white h-50 -mt-52.5 relative w-[95%] rounded-3xl p-4 mx-auto"
+        >
           <div>
-             <p className="">
-            Clean Designs, Great Fit, And Amazing Fabric Quality - HAVEN-HOUSE
-            Has Become My Everyday Style Choice.
-          </p>
+            <p className="">
+              Clean Designs, Great Fit, And Amazing Fabric Quality - HAVEN-HOUSE
+              Has Become My Everyday Style Choice.
+            </p>
             <div className="flex mt-6">
               <div>
                 <Image
@@ -55,7 +82,7 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="grid grid-cols-3 gap-4 mt-10 max-sm:hidden">
         <div>
