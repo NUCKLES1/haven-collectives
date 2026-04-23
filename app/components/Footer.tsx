@@ -38,7 +38,7 @@ export const Footer = () => {
             <input
               type="text"
               placeholder="Enter your email"
-              className="py-2.5 pl-2 max-sm:w-45"
+              className="py-2.5 pl-2 max-sm:w-46"
             />
             <button className="text-white bg-black px-4 py-2.5 rounded-md">
               Subscribe

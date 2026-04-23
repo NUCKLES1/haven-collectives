@@ -17,7 +17,7 @@ const Testimonial = () => {
           Modern Style.
         </p>
       </div>
-      <div className="w-full mt-20 lg:hidden">
+      <div className="w-full mt-16 lg:hidden">
         <div>
           <Image
             src={profile}
