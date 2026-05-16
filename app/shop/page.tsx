@@ -4,7 +4,7 @@ import guy from "../../public/fashion.png";
 
 const page = () => {
   return (
-    <div className="px-10 pt-20">
+    <div className="px-10 pt-20 absolute z-200">
       <div>
         <ul className="w-full flex uppercase justify-between">
           <li className="cur hover:text-indigo-400 duration-300">

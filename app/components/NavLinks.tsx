@@ -45,9 +45,9 @@ const NavLinks = () => {
     
       const navLinks = [
         { href: "/", label: "Home" },
-        { href: "/about", label: "Shop" },
-        { href: "/service", label: "Fashion" },
-        { href: "/contact", label: "About" },
+        { href: "/shop", label: "Shop" },
+        { href: "/about", label: "About" },
+        { href: "/contact", label: "Contact" },
       ];
   return (
 

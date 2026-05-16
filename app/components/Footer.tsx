@@ -8,6 +8,8 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoChevronDown, IoChevronUp } from "react-icons/io5";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import logo from "../../public/logo.png";
 
 export const Footer = () => {
   const [isQuickLinksOpen, setIsQuickLinksOpen] = useState(false);
@@ -40,7 +42,7 @@ export const Footer = () => {
             transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
             className="font-semibold max-sm:text-black text-xl"
           >
-            HHC
+            <Image src={logo} alt="" className="w-30 h-18" />
           </motion.span>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -89,10 +91,10 @@ export const Footer = () => {
             </motion.button>
             <h1 className="text-lg max-sm:hidden">Pages</h1>
             <ul className="flex flex-col gap-3 max-sm:hidden">
-              {pages.map((link) => {
+              {pages.map((link, index) => {
                 const isActive = pathname === link.href;
                 return (
-                  <a key={link.href}>
+                  <a key={`desktop-${link.href}-${index}`}>
                     <Link
                       href={link.href}
                       className={` rounded-md hover:text-indigo-300 duration-300 ${
@@ -111,10 +113,10 @@ export const Footer = () => {
             <ul
               className={`pl-0 mt-2 md:mt-0  flex flex-col max-sm:gap-6 underline lg:hidden pb-6 gap-4 ${isQuickLinksOpen ? "block" : "hidden md:flex"}`}
             >
-              {pages.map((link) => {
+              {pages.map((link, index) => {
                 const isActive = pathname === link.href;
                 return (
-                  <a key={link.href}>
+                  <a key={`mobile-${link.href}-${index}`}>
                     <Link
                       href={link.href}
                       className={` rounded-md hover:text-indigo-300 duration-300 ${

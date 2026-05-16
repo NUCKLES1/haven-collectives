@@ -6,21 +6,24 @@ import lady from "../../public/lady.png";
 import fragrance from "../../public/fragrance.png";
 import necklace from "../../public/necklace.png";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const About = () => {
   return (
     <div className="h-auto lg:px-20 px-6 pt-20">
       <div className="justify-between lg:flex">
         <div>
-          <motion.button
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="border px-6 py-2 rounded-4xl bg-linear-to-l hover:from-[#4d2c4d] hover:to-indigo-400 lg:duration-300 hover:border-none hover:text-white cur"
-          >
-            About Us
-          </motion.button>
+          <Link href="/about">
+            <motion.button
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="border px-6 py-2 rounded-4xl bg-linear-to-l hover:from-[#4d2c4d] hover:to-indigo-400 lg:duration-300 hover:border-none hover:text-white cur"
+            >
+              About Us
+            </motion.button>
+          </Link>
         </div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -122,13 +125,13 @@ const About = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               className="w-[50%] max-sm:w-1/2 h-70 mt-10 max-sm:h-50"
             >
-            <Image
-              src={fragrance}
-              alt=""
-              width={500}
-              height={500}
-              className=" object-cover rounded-2xl w-full h-full"
-            />
+              <Image
+                src={fragrance}
+                alt=""
+                width={500}
+                height={500}
+                className=" object-cover rounded-2xl w-full h-full"
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 50 }}
@@ -137,13 +140,13 @@ const About = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               className="w-[50%] h-80 max-sm:w-1/2 max-sm:h-60"
             >
-            <Image
-              src={necklace}
-              alt=""
-              width={500}
-              height={500}
-              className=" object-cover rounded-2xl w-full h-full"
-            />
+              <Image
+                src={necklace}
+                alt=""
+                width={500}
+                height={500}
+                className=" object-cover rounded-2xl w-full h-full"
+              />
             </motion.div>
           </div>
         </motion.div>

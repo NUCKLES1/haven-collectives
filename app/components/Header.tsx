@@ -53,9 +53,9 @@ export const Header = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "Shop" },
-    { href: "/service", label: "Fashion" },
-    { href: "/contact", label: "About" },
+    { href: "/shop", label: "Shop" },
+    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
   ];
   return (
     <div className="lg:px-16 px-6 w-full h-20 py-4 pt-10 fixed z-100 max-sm:bg-white">

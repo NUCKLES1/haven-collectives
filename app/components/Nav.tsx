@@ -53,7 +53,7 @@ export const Nav = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "Shop" },
+    { href: "/shop", label: "Shop" },
     { href: "/service", label: "Fashion" },
     { href: "/contact", label: "About" },
   ];

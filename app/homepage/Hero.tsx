@@ -7,6 +7,7 @@ import Image from "next/image";
 import fashion from "../../public/fashion.png";
 import outfit from "../../public/outfit.png";
 import outfit1 from "../../public/outfit1.png";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -24,14 +25,16 @@ export const Hero = () => {
             </motion.h1>
           </div>
           <div className="mt-6">
-            <motion.button
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 1 }}
-              className="py-3 bg-linear-to-t from-[#4d2c4d] to-indigo-400 px-8 hover:duration-300 font-bold rounded-full shadow-2xl cur hover:from-indigo-500 hover:scale-95"
-            >
-              Shop Now
-            </motion.button>
+            <Link href="/shop">
+              <motion.button
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 1 }}
+                className="py-3 bg-linear-to-t from-[#4d2c4d] to-indigo-400 px-8 hover:duration-300 font-bold rounded-full shadow-2xl cur hover:from-indigo-500 hover:scale-95"
+              >
+                Shop Now
+              </motion.button>
+            </Link>
           </div>
         </div>
         <motion.div
@@ -65,9 +68,11 @@ export const Hero = () => {
                   </p>
                 </div>
                 <div className="mt-6">
-                  <button className="py-3 bg-linear-to-t from-[#4d2c4d] to-indigo-400 px-8 hover:duration-300 font-bold rounded-full shadow-2xl cur hover:from-indigo-500 hover:scale-95 max-sm:hidden">
-                    Shop Now
-                  </button>
+                  <Link href="/shop">
+                    <button className="py-3 bg-linear-to-t from-[#4d2c4d] to-indigo-400 px-8 hover:duration-300 font-bold rounded-full shadow-2xl cur hover:from-indigo-500 hover:scale-95 max-sm:hidden">
+                      Shop Now
+                    </button>
+                  </Link>
                 </div>
                 <div className="pt-10 uppercase">
                   <p className="text-sm font-bold">collective vibes</p>
