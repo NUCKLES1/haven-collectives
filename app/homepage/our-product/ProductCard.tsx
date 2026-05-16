@@ -72,7 +72,7 @@ const ProductCard = ({ product }: Props) => {
           <div className="text-black lg:text-2xl text-xl uppercase">
             {product.name}
           </div>
-          <div className="text-black lg:text-xl"><PriceView price={product?.price} discount={product?.discount} label={product?.label}/></div>
+          <div className="text-black lg:text-xl"></div>
         </div>
       </motion.div>
     </>
